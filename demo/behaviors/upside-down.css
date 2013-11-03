@@ -1,0 +1,33 @@
+.fly__label--upside-down {
+  opacity: 0;
+}
+.fly__label--upside-down > span {
+  transition: all .5s ease;
+  position:relative;
+}
+.fly__label--upside-down > span.odd {
+  top:-5em;
+}
+.fly__label--upside-down > span.even {
+  top:5em;
+}
+.fly__label--upside-down > span.first {
+  top:0;
+  left:5em;
+}
+.fly__label--upside-down > span.last {
+  top:0;
+  right:5em;
+}
+.fly__label--upside-down.fly__label--active {
+  opacity: 1;
+}
+.fly__label--upside-down.fly__label--active > span {
+  top:0;
+}
+.fly__label--upside-down.fly__label--active > span.first {
+  left:0;
+}
+.fly__label--upside-down.fly__label--active > span.last {
+  right:0;
+}
