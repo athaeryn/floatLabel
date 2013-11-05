@@ -38,6 +38,11 @@
           }else{
             var order ="odd";
           }
+
+          if(this.labelStr.substr(i, 1) == ' '){
+            this.labelStr.substr(i, 1).replace(/ /g,'\u00a0');
+            // i+=6;
+          }
         
           if(i == 0){
             effectLabelStr += '<span class="'+order+' first">' + this.labelStr.substr(i, 1)+'</span>';
