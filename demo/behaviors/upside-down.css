@@ -1,0 +1,35 @@
+/* by Konstantinos Leimonis - kwnccc */
+
+.fly__label--upside-down {
+  opacity: 0;
+}
+.fly__label--upside-down > span {
+  transition: all .5s ease;
+  position:relative;
+}
+.fly__label--upside-down > span:nth-child(odd) {
+  top:-5em;
+}
+.fly__label--upside-down > span:nth-child(even) {
+  top:5em;
+}
+.fly__label--upside-down > span:first-child {
+  top:0;
+  left:-5em;
+}
+.fly__label--upside-down > span:last-child {
+  top:0;
+  right:-5em;
+}
+.fly__label--upside-down.fly__label--active {
+  opacity: 1;
+}
+.fly__label--upside-down.fly__label--active > span {
+  top:0;
+}
+.fly__label--upside-down.fly__label--active > span:first-child {
+  left:0;
+}
+.fly__label--upside-down.fly__label--active > span:last-child {
+  right:0;
+}
